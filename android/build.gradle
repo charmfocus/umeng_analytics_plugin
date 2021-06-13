@@ -4,7 +4,6 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
         maven { url 'https://repo1.maven.org/maven2/' }
     }
 
@@ -16,7 +15,6 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
         maven { url 'https://repo1.maven.org/maven2/' }
     }
 }
@@ -36,6 +34,7 @@ android {
 }
 
 dependencies {
-    api 'com.umeng.umsdk:analytics:8.1.4'
-    api 'com.umeng.umsdk:common:2.1.8'
+//    api 'com.umeng.umsdk:analytics:8.1.4'
+//    api 'com.umeng.umsdk:common:2.1.8'
+    implementation group: 'com.umeng.umsdk', name: 'common', version: '9.3.8'
 }
